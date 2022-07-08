@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyle } from '@/themes/GlobalStyle';
-import { themes } from '@/themes/.';
+import { GlobalStyle } from '@/theme/GlobalStyle';
+import { themes } from '@/theme';
 import { useAppSelector } from '@/store/hooks';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   return (
     <ThemeProvider theme={themes[name][mode]}>
       <GlobalStyle />
+      <div></div>
     </ThemeProvider>
   );
 }

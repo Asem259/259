@@ -16,6 +16,10 @@ declare module 'styled-components' {
       md: string;
       full: string;
     };
+    shadow: {
+      sm: string;
+      md: string;
+    };
     spacing: Record<Breakpoints, string>;
     colors: {
       primary: string;
@@ -35,6 +39,8 @@ declare module 'styled-components' {
       border: { window: string; light: string; dark: string };
     };
     breakpoints: Record<Breakpoints, string>;
-    styles: {};
+    styles: {
+      center: FlattenInterpolation;
+    };
   }
 }

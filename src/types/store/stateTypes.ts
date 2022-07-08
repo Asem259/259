@@ -1,4 +1,4 @@
-import { Theme } from '@/themes';
+import { Theme } from '@/theme';
 
 export interface AppsState {
   activeApp: string;

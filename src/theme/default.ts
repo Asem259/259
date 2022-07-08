@@ -5,7 +5,13 @@ const topBar = {
   border: 'none',
 };
 
-const styles = {};
+const styles = {
+  center: css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `,
+};
 
 const borderRadius = {
   none: '0',
@@ -13,6 +19,7 @@ const borderRadius = {
   md: '8px',
   full: '999rem',
 };
+
 const spacing = {
   xs: '0.25rem',
   sm: '0.5rem',
@@ -34,6 +41,10 @@ export const defaultDarkTheme: DefaultTheme = {
   breakpoints,
   spacing,
   styles,
+  shadow: {
+    sm: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);',
+    md: ' 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);',
+  },
   colors: {
     common: {
       white: 'white',
@@ -63,6 +74,10 @@ export const defaultLightTheme: DefaultTheme = {
   breakpoints,
   spacing,
   styles,
+  shadow: {
+    sm: 'box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);',
+    md: '	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);',
+  },
   colors: {
     common: {
       white: 'white',
